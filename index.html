@@ -1,0 +1,161 @@
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ClimateOS | Global Environmental Intelligence</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#0d1c2d",
+              "secondary-fixed": "#dae2fd",
+              "primary-fixed-dim": "#4edea3",
+              "surface-container-high": "#1c2b3c",
+              "outline-variant": "#3c4a42",
+              "surface-dim": "#051424",
+              "on-secondary": "#283044",
+              "on-secondary-fixed": "#131b2e",
+              "on-tertiary-fixed-variant": "#3c475a",
+              background: "#051424",
+              "surface-bright": "#2c3a4c",
+              "on-tertiary": "#263143",
+              "tertiary-container": "#98a3ba",
+              secondary: "#bec6e0",
+              "on-primary-container": "#00422b",
+              "on-primary-fixed": "#002113",
+              "primary-fixed": "#6ffbbe",
+              "on-secondary-container": "#adb4ce",
+              "primary-container": "#10b981",
+              "on-error": "#690005",
+              error: "#ffb4ab",
+              "surface-tint": "#4edea3",
+              outline: "#86948a",
+              "on-tertiary-fixed": "#111c2d",
+              "inverse-primary": "#006c49",
+              "on-primary": "#003824",
+              "secondary-container": "#3f465c",
+              "surface-container-highest": "#273647",
+              "surface-container": "#122131",
+              "on-primary-fixed-variant": "#005236",
+              tertiary: "#bcc7de",
+              "surface-container-lowest": "#010f1f",
+              "on-surface": "#d4e4fa",
+              "on-background": "#d4e4fa",
+              "inverse-surface": "#d4e4fa",
+              "on-surface-variant": "#bbcabf",
+              surface: "#051424",
+              "inverse-on-surface": "#233143",
+              "surface-variant": "#273647",
+              "secondary-fixed-dim": "#bec6e0",
+              "tertiary-fixed": "#d8e3fb",
+              "on-tertiary-container": "#2e394c",
+              "on-secondary-fixed-variant": "#3f465c",
+              "error-container": "#93000a",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#bcc7de",
+              primary: "#4edea3",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              md: "24px",
+              xl: "48px",
+              base: "4px",
+              sm: "16px",
+              xs: "8px",
+              lg: "32px",
+              gutter: "24px",
+              margin: "32px",
+            },
+            fontFamily: {
+              "mono-data": ["Inter"],
+              "headline-sm": ["Inter"],
+              "display-xl": ["Inter"],
+              "headline-md": ["Inter"],
+              "body-md": ["Inter"],
+              "display-lg": ["Inter"],
+              "label-caps": ["Inter"],
+              "body-sm": ["Inter"],
+              "body-lg": ["Inter"],
+            },
+            fontSize: {
+              "mono-data": ["14px", { lineHeight: "1", fontWeight: "500" }],
+              "headline-sm": ["20px", { lineHeight: "1.4", fontWeight: "600" }],
+              "display-xl": [
+                "48px",
+                { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" },
+              ],
+              "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+              "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+              "display-lg": [
+                "36px",
+                { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "700" },
+              ],
+              "label-caps": [
+                "12px",
+                { lineHeight: "1", letterSpacing: "0.05em", fontWeight: "600" },
+              ],
+              "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .glass-panel {
+        background: rgba(18, 33, 49, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #051424;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #1c2b3c;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #10b981;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
