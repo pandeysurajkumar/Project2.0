@@ -23,12 +23,14 @@ export default function HeroSection() {
               they happen. Immediate visibility into critical environmental KPIs.
             </p>
             <div className="pt-lg flex flex-wrap gap-md">
-              <button className="bg-primary-container text-on-primary-container px-lg py-md rounded-lg font-headline-sm flex items-center gap-xs hover:brightness-110 transition-all active:scale-95">
-                Get Started{" "}
+              <a href="#" className="inline-flex items-center gap-xs">
+                <button className="bg-primary-container text-on-primary-container px-lg py-md rounded-lg font-headline-sm flex items-center gap-xs hover:brightness-110 transition-all active:scale-95">
+                Get Started
                 <span className="material-symbols-outlined" data-icon="arrow_forward">
                   arrow_forward
                 </span>
               </button>
+              </a>
               <button className="bg-surface-container-high border border-outline-variant/30 text-on-surface px-lg py-md rounded-lg font-headline-sm hover:bg-surface-variant transition-all active:scale-95">
                 View Demo
               </button>
